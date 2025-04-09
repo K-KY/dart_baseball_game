@@ -1,0 +1,14 @@
+name: dart_baseball_game
+description: A Dart console application.
+version: 1.0.0
+
+environment:
+  sdk: '^3.7.0'
+
+dependencies:
+  matcher: ^0.12.17
+# 여기에 사용할 패키지들
+
+dev_dependencies:
+  test: ^1.24.0
+
