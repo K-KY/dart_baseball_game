@@ -4,13 +4,15 @@ class Player {
   List<int> _numbers = [];
 
   void pickNumbers() {
-    while (_numbers.length < 3) {
+    List<int> numbers = [];
+    while (numbers.length < 3) {
       int generateNumber = RandomNumberGenerator.generateNumber(10);
-      if (_numbers.contains(generateNumber)) {
+      if (numbers.contains(generateNumber)) {
         continue;
       }
-      _numbers.add(generateNumber);
+      numbers.add(generateNumber);
     }
+    _numbers = numbers;
   }
 
   List<int> getNumbers() {
